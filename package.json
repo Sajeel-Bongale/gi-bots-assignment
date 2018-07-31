@@ -1,0 +1,25 @@
+{
+  "name": "gi-bots-assignment",
+  "version": "1.0.0",
+  "description": "Assignment",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install && npm install http-server -g && http-server -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sajeel-Bongale/gi-bots-assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sajeel-Bongale/gi-bots-assignment/issues"
+  },
+  "homepage": "https://github.com/Sajeel-Bongale/gi-bots-assignment#readme",
+  "dependencies": {
+    "angular": "^1.7.2",
+    "angular-ui-router": "^1.0.19",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.3.1"
+  }
+}
