@@ -13,7 +13,12 @@
             url: '/users',
             templateUrl: 'app/views/users/users.html',
             controller: 'UsersController',
-            controllerAs: 'vm'
+            controllerAs: 'vm',
+            resolve: {
+                users: ['GetUsersService', function(GetUsersService){
+                    GetUsersService.fetchUserList();
+                }]
+            }
         };
 
         $stateProvider.state('users', userConfig);

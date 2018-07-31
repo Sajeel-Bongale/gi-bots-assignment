@@ -5,12 +5,20 @@
         .module('giBots')
         .controller('UsersController', UsersController);
 
-    UsersController.$inject = [];
+    UsersController.$inject = ['users', 'GetUsersService'];
 
-    function UsersController(){
+    function UsersController(users, GetUsersService){
         var vm = this;
 
-        vm.name = "sajeel"
+        _init();
+
+        function _init(){
+            vm.name = "sajeel"
+            /*GetUsersService.fetchUserList()
+            .then(function success(data){
+                vm.users = data;
+            });*/
+        }
 
     }
 })();
