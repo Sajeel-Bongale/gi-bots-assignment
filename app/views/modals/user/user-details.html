@@ -1,0 +1,45 @@
+<div class="modal-header">
+    <h2 class="text-capitalize text-center">{{vm.user.name.first}} {{vm.user.name.last}}</h2>
+</div>
+
+<div class="modal-body">
+    <div class="text-center">
+        <div>
+            <img ng-src="{{vm.user.picture.medium}}" alt="user-thumbnail">
+        </div>
+        <div>
+            <span class="text-danger">UserName: </span>
+            <span class="text-info">{{vm.user.login.username}}</span>
+        </div>
+        <div>
+            <span class="text-danger">Email: </span>
+            <span class="text-info">{{vm.user.email}}</span>
+        </div>
+        <div>
+            <span class="text-danger">Mobile Number: </span>
+            <span class="text-info">{{vm.user.cell}}</span>
+        </div>
+        <div>
+            <span class="text-danger">Landline Number: </span>
+            <span class="text-info">{{vm.user.phone}}</span>
+        </div>
+        <div>
+            <span class="text-danger">Gender: </span>
+            <span class="text-info">{{vm.user.gender}}</span>
+        </div>
+        <div>
+            <span class="text-danger">Age: </span>
+            <span class="text-info">{{vm.user.dob.age}}</span>
+        </div>
+        <div>
+            <span class="text-danger">Address: </span>
+            <span class="text-info">
+                {{vm.user.location.street}} {{vm.user.location.city}} {{vm.user.location.state}} {{vm.user.location.postcode}}
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-warning" type="button" ng-click="vm.close()">Cancel</button>
+</div>

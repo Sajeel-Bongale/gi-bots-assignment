@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Sajeel-Bongale/gi-bots-assignment#readme",
   "dependencies": {
     "angular": "^1.7.2",
+    "angular-ui-bootstrap": "^2.5.6",
     "angular-ui-router": "^1.0.19",
     "bootstrap": "^3.3.7",
     "jquery": "^3.3.1"

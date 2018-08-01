@@ -2,7 +2,8 @@
     'use strict';
 
     angular.module('giBots', [
-        'ui.router'
+        'ui.router',
+        'ui.bootstrap'
     ]);
 
 })();

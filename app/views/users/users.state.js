@@ -14,11 +14,7 @@
             templateUrl: 'app/views/users/users.html',
             controller: 'UsersController',
             controllerAs: 'vm',
-            resolve: {
-                users: ['GetUsersService', function(GetUsersService){
-                    GetUsersService.fetchUserList();
-                }]
-            }
+            resolve: {}
         };
 
         $stateProvider.state('users', userConfig);
